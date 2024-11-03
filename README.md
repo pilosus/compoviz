@@ -1,14 +1,14 @@
-# compoviz - visualization for Docker Compose configuration
+# compoviz
 
-`compoviz` generates an image representing Docker Compose configuration in YAML format 
-that follows the [Compose Specification](https://docs.docker.com/reference/compose-file/).
+`compoviz` generates an image representing Docker Compose configuration.
+
+Docker Compose configuration is expected to be in YAML format
+and to follow [Compose Specification](https://docs.docker.com/reference/compose-file/).
 
 ## Installation
 
 ```shell
-$ git clone https://github.com/pilosus/compoviz.git
-$ cd compoviz
-$ make install-package
+$ pip install git+https://github.com/pilosus/compoviz.git
 ```
 
 ## Usage

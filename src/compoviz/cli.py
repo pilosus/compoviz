@@ -10,7 +10,7 @@ CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
 @click.command(context_settings=CONTEXT_SETTINGS)
 @click.argument("input", required=True, type=click.File("r"))
-@click.argument("filename", required=True)
+@click.argument("filename", default="compose.png")
 def cli(input, filename) -> Any:
     """
     Generate an image that represents given Docker Compose configuration
